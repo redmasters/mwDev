@@ -8,18 +8,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("v1/departamentos")
 public class DepartamentosController {
 
     @Autowired
     DepartamentosRepository departamentosRepository;
 
-    @GetMapping(path = "/andar/{id}")
-    public List<Departamentos> buscarPorAndar(@PathVariable Long andarNumero){
-        return departamentosRepository.findTopByAndar(andarNumero);
+    @GetMapping("/departamentos")
+    public ArrayList<Departamentos> listarDepartamentos(){
+        return (ArrayList<Departamentos>) departamentosRepository.findAll();
     }
 
 

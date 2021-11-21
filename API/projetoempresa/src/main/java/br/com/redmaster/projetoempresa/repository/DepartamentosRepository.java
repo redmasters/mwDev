@@ -7,6 +7,5 @@ import java.util.List;
 
 public interface DepartamentosRepository extends CrudRepository<Departamentos, Long> {
 
-    List<Departamentos> findByAndar(int andarNumero);
 
 }
