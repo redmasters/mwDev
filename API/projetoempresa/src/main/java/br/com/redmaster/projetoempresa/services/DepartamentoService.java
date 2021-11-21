@@ -14,8 +14,4 @@ public class DepartamentoService {
         this.departamentosRepository = departamentosRepository;
     }
 
-    public List<Departamentos> buscarPorAndar(Long numeroAndar) {
-        List<Departamentos> departamentos = departamentosRepository.findByAndar(numeroAndar);
-        return departamentos;
-    }
 }
