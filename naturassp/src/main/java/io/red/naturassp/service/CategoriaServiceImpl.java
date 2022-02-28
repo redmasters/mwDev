@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @Component
-public class CategoriaServiceImplService implements ICategoriaService {
+public class CategoriaServiceImpl implements ICategoriaService {
     private Logger LOGGER;
     @Autowired
     private CategoriaDAO dao;
