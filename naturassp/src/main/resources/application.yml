@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: "naturassp"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/NATURASSP?useTimezone=true&serverTimeZone=America/Sao_Paulo
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
