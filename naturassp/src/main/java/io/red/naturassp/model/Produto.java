@@ -15,7 +15,7 @@ public class Produto {
     @Id
     @Column(name = "id_produto")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long idProduto;
 
     @Column(name = "nome_produto", length = 100, nullable = false)
     private String nome;
@@ -27,7 +27,7 @@ public class Produto {
     private String fotoProduto;
 
     @Column(name = "preco_produto", nullable = false)
-    private Double preco;
+    private double preco;
 
     @Column(name = "disponivel_produto")
     private boolean disponivel;
@@ -36,12 +36,12 @@ public class Produto {
     @JoinColumn(name = "id_categoria")
     private Categoria categoria;
 
-    public Long getId() {
-        return id;
+    public Long getIdProduto() {
+        return idProduto;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setIdProduto(Long idProduto) {
+        this.idProduto = idProduto;
     }
 
     public boolean isDisponivel() {
@@ -76,11 +76,11 @@ public class Produto {
         this.fotoProduto = fotoProduto;
     }
 
-    public Double getPreco() {
+    public double getPreco() {
         return preco;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
