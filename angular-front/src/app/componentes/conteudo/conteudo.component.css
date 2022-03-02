@@ -1,0 +1,17 @@
+nz-content {
+  padding: 0 50px;
+  margin-top: 64px;
+  font-size: 2.0rem;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+  font-size: 2.0rem;
+}
+
+.inner-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 380px;
+  font-size: 2.0rem;
+}
